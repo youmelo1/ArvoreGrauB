@@ -266,7 +266,7 @@ public class Arvore {
 		if(no!=null) {
 			int comparacao = nome.compareTo(no.getNome());
 			if(comparacao==0) {
-				System.out.println("Valor está na árvore :)");
+				System.out.println("Valor estï¿½ na ï¿½rvore :)");
 				System.out.println();
 				return no;
 			}
@@ -277,7 +277,7 @@ public class Arvore {
 
 			}
 		}
-		System.out.println("Valor não está na árvore :(");
+		System.out.println("Valor nï¿½o estï¿½ na ï¿½rvore :(");
 		
 		return null;
 		
