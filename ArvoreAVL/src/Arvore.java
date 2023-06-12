@@ -300,11 +300,11 @@ public class Arvore {
         	nomes.add(no.getNome());
         }
 
-        if (prefixo.compareTo(no.getNome()) < 0) {
-        	procurarNomes(no.getEsquerdo(), prefixo, nomes);
-        } else {
-        	procurarNomes(no.getDireito(), prefixo, nomes);
+        if (prefixo.compareTo(no.getNome()) <= 0) {
+            procurarNomes(no.getEsquerdo(), prefixo, nomes);
         }
+
+        procurarNomes(no.getDireito(), prefixo, nomes);
     }
 
 
