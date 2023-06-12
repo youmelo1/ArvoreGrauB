@@ -5,6 +5,9 @@ public class PrincipalArvore {
 		InterfaceUsuario i = new InterfaceUsuario();
 		
 		i.mensagens();
+
+		Leitura l = new Leitura();
+		
 		
 	}
 }

@@ -4,9 +4,10 @@ import java.io.File;
 
 public class Leitura 
 {
-    public res[] read(File arq) 
+    public res[] read(File arq, Arvore b, int cod) 
     {       
         File file = arq;
+        
         res[] r = new res[100];
         String[] nomes = new String[100];
         String[] cpf = new String[100];
@@ -29,6 +30,13 @@ public class Leitura
                 System.out.println(r[i].nome);
                 System.out.println(r[i].cpf);
                 System.out.println(r[i].data);
+                if(cod == 1){
+                    b.inserir(r[i].nome);
+                } else if(cod == 2){
+                    b.inserir(r[i].cpf);
+                } else {
+                    b.inserir(r[i].data);
+                }
             }
         } catch (IOException e)
         {
