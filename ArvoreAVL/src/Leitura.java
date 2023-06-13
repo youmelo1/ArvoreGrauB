@@ -8,7 +8,7 @@ public class Leitura
      String[] cpf = new String[100];
      String[] data = new String[100];
      Gravador[] gravados = new Gravador[100];
-    public Gravador[] read(File arq, Arvore b, int cod) 
+    public Gravador[] read(File arq, Arvore nm, Arvore cp, Arvore dt) 
     {       
         File file = arq;
         
@@ -41,14 +41,10 @@ public class Leitura
                 String cpf = r[i].cpf;
                 String data = r[i].data;
                 
-                if(cod == 1){
-                   
-                    b.inserir(nome);
-                } else if(cod == 2){
-                    b.inserir(cpf);
-                } else {
-                    b.inserir(data);
-                }
+                nm.inserir(nome);
+                cp.inserir(cpf);
+                dt.inserir(data);
+                
                 //System.out.println(b.getRaiz());
                 i++;
             }
