@@ -27,7 +27,7 @@ public class Leitura
                 // Armazena os 3 dados desejados para trabalhar nome, cpf, data
                 res re = new res(a[0], a[1], a[2]);
                 // Gravador vai receber e transformar cada informação de cada pessoa
-                Gravador g = new Gravador(a[0], a[1], a[2], a[3]);
+                Gravador g = new Gravador(a[0], a[1], a[2], a[3], a[4]);
                 gravados[i] = g;
                 r[i] = re;
                 nomes[i] = r[i].nome;

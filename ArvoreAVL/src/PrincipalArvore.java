@@ -25,7 +25,7 @@ public class PrincipalArvore {
 	
 		}
 
-		System.out.println(g[2].nome);
+		System.out.println(g[0].cidade);
 
 	
 
