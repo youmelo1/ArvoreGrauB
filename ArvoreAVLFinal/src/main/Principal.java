@@ -1,4 +1,5 @@
 package main;
+import arquivo.Leitura;
 import ui.Menu;
 
 public class Principal {

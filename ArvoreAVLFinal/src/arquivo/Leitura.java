@@ -29,7 +29,7 @@ public class Leitura
                 // quebra os dados trazidos do arquivo dentro do array
                 String[] a = leitura.split(";");
                 // Armazena os 3 dados desejados para trabalhar nome, cpf, data
-                Informacoes re = new Informacoes(a[0], a[1], a[2]);
+                Informacoes re = new Informacoes(a[0], a[2], a[3]);
                 // Gravador vai receber e transformar cada informação de cada pessoa
                 Gravador g = new Gravador(a[0], a[1], a[2], a[3], a[4]);
                 gravados[i] = g;

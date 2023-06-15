@@ -11,19 +11,19 @@ import arvore.Arvore;
 public class Menu {
 
 		private Scanner sc =  new Scanner(System.in);
-		private File file = new File("E:\\Usuários\\User1\\Desktop\\ArvoreAVLFinal\\src\\test.txt");
+		private File file = new File("E:\\Usuï¿½rios\\User1\\Desktop\\ArvoreAVLFinal\\src\\test.txt");
 		private Arvore arvoreNomes = new Arvore();
 		private Arvore arvoreCPF = new Arvore();
 		private Arvore arvoreData = new Arvore();
 		private Leitura l = new Leitura();
 		private Gravador[] g =  l.read(file, arvoreNomes, arvoreCPF, arvoreData);
-		// O retorno da funÃ§Ã£o retorna é o array de objetos 
-		// Cada nodo vai ter um indice referente a sua posição no array
+		// O retorno da funÃ§Ã£o retorna ï¿½ o array de objetos 
+		// Cada nodo vai ter um indice referente a sua posiï¿½ï¿½o no array
 		
 		
 		
 		public void menu() {
-			System.out.println("Árvore binária de busca, para escolher uma funcionalidade, é preciso digitar o número da opção.");
+			System.out.println("ï¿½rvore binï¿½ria de busca, para escolher uma funcionalidade, ï¿½ preciso digitar o nï¿½mero da opï¿½ï¿½o.");
 			opcoes();
 			
 			int escolha = sc.nextInt();
@@ -49,7 +49,7 @@ public class Menu {
 					break;
 					
 				default:
-					System.out.println("Essa não é uma opção disponível!");
+					System.out.println("Essa nï¿½o ï¿½ uma opï¿½ï¿½o disponï¿½vel!");
 					opcoes();
 					escolha = sc.nextInt();
 				}
@@ -83,7 +83,7 @@ public class Menu {
 			if(index>=0) {
 				System.out.println(l.retornaDados(index));
 			}else {
-				System.out.println("CPF não está na árvore :(");
+				System.out.println("CPF nï¿½o estï¿½ na ï¿½rvore :(");
 			}
 			
 		}
@@ -99,12 +99,12 @@ public class Menu {
 					System.out.println(l.retornaDados(index));
 				}
 			}else {
-				System.out.println("Nenhuma pessoa foi encontrada começando com '" + prefixo + "':");
+				System.out.println("Nenhuma pessoa foi encontrada comeï¿½ando com '" + prefixo + "':");
 			}
 		}
 		
 		public void consultarPorData() {
-			System.out.println("Para não quebrar o código, é necessário que se insira as datas pelo formato DD/MM/AAAA");
+			System.out.println("Para nï¿½o quebrar o cï¿½digo, ï¿½ necessï¿½rio que se insira as datas pelo formato DD/MM/AAAA");
 			System.out.println("Qual seria a data inicial do intervalo?: ");
 			sc.nextLine();
 			String dataInicio = sc.nextLine();
