@@ -1,5 +1,5 @@
 package arquivo;
-public class Gravador { //Objeto onde guardamos os atributos recebidos no csv
+public class Gravador { //Classe do objeto onde guardamos os atributos recebidos no csv
 	 	String cpf;
 	    String rg;
 	    String nome;
