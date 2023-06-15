@@ -265,9 +265,9 @@ public class Arvore {
 
 	
 	
-	public int procurarPeloCPF(String cpf, No no) {
+	public int procurarPeloCPF(String cpf, No no) {   //Busca cpfs na arvore recursivamente
 
-		
+		 
 		if(no!=null) {
 			int comparacao = cpf.compareTo(no.getInfo());
 			if(comparacao==0) {
@@ -286,13 +286,13 @@ public class Arvore {
 		
 	}
 
-	public List<Integer> listaIndices(String prefixo) {
+	public List<Integer> listaIndices(String prefixo) { //retorna indices da busca por nomes
         List<Integer> indices = new ArrayList<>();
         procurarNomesPorPrefixo(raiz, prefixo, indices);
         return indices;
     }
 
-    public void procurarNomesPorPrefixo(No no, String prefixo, List<Integer> indices) {
+    public void procurarNomesPorPrefixo(No no, String prefixo, List<Integer> indices) { //Realiza uma busca por prefixos(nomes) 
     	
     	
         if (no == null) {
@@ -311,7 +311,7 @@ public class Arvore {
     }
 
 
-    
+    //retorna indices da busca por datas
     public List<Integer> listaIndicesDatas(String dataInicio, String dataFim){
     	List<Integer> indices = new ArrayList<>();
     	procurarDatas(dataInicio, dataFim, raiz, indices);
@@ -319,7 +319,7 @@ public class Arvore {
     }
     
     
-
+//busca as datas comparando elas no formato de string utiliznado o metodo compareTo
     public void procurarDatas(String dataInicio, String dataFim, No no, List<Integer> indices) {
     	String dataI = inverteDatas(dataInicio);
     	String dataF = inverteDatas(dataFim);
@@ -340,7 +340,7 @@ public class Arvore {
     	procurarDatas(dataInicio, dataFim, no.getDireito(), indices);
     }
     
-    
+    //inverte as datas para ser possivel comparar-las com o compare
     public String inverteDatas(String data) {
     	String f = "";
         for(int x = 0; x<1; x++)
