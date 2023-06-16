@@ -271,6 +271,7 @@ public class Arvore {
 		if(no!=null) {
 			int comparacao = cpf.compareTo(no.getInfo());
 			if(comparacao==0) {
+				//retorna o indice do nó cujo CPF é o mesmo que o usuário inseriu
 				return no.getIndex();
 			}
 			if(comparacao>0) {
@@ -286,7 +287,7 @@ public class Arvore {
 		
 	}
 
-	public List<Integer> listaIndices(String prefixo) { //retorna indices da busca por nomes
+	public List<Integer> listaIndices(String prefixo) { //método para retornar a lista de índices que o procurarNomesPorPrefixo achou
         List<Integer> indices = new ArrayList<>();
         procurarNomesPorPrefixo(raiz, prefixo, indices);
         return indices;
@@ -300,6 +301,7 @@ public class Arvore {
         }
 
         if (no.getInfo().startsWith(prefixo)) {
+		//se o nó tiver o mesmo começo igual ao prefixo, adiciona o indice da pessoa na lista
         	indices.add(no.getIndex());
         }
 
@@ -311,8 +313,8 @@ public class Arvore {
     }
 
 
-    //retorna indices da busca por datas
-    public List<Integer> listaIndicesDatas(String dataInicio, String dataFim){
+   
+    public List<Integer> listaIndicesDatas(String dataInicio, String dataFim){//método para retornar a lista de índices que o procurarDatas achou
     	List<Integer> indices = new ArrayList<>();
     	procurarDatas(dataInicio, dataFim, raiz, indices);
     	return indices;
@@ -329,6 +331,7 @@ public class Arvore {
         }
     	
     	if (no.getInfo().compareTo(dataI) >= 0 && no.getInfo().compareTo(dataF)<=0) {
+		//se tiver no intervalo, adiciona o indice da pessoa na lista
         	indices.add(no.getIndex());
 
     	}
@@ -337,17 +340,19 @@ public class Arvore {
     		procurarDatas(dataInicio, dataFim, no.getEsquerdo(), indices);
     	}
     	
-    	 if (no.getInfo().compareTo(dataF) < 0) {
+    	 if (no.getInfo().compareTo(dataF)<0) {
     	        procurarDatas(dataInicio, dataFim, no.getDireito(), indices);
     	 }
     }
     
-    //inverte as datas para ser possivel comparar-las com o compare
-    // Inverte deixando na ordem ano/mes/dia
+   
     public String inverteDatas(String data) {
     	String f = "";
         for(int x = 0; x<1; x++)
         {
+	//recebe uma String no formato DD/MM/AAAA
+	//inverte as datas para ser possivel comparar-las com o compare
+        // Inverte deixando na ordem ano/mes/dia
             f += data.charAt(6);
             f+= data.charAt(7);
               f+= data.charAt(8);
@@ -360,6 +365,7 @@ public class Arvore {
                 f+= data.charAt(1);
         }
 		return f;
+	//retorna a data no novo formato
     }
     
     
