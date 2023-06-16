@@ -8,10 +8,12 @@ import java.io.File;
 
 public class Leitura 
 {   
+     // Arrays que armazenarão dados provenientes do arquivo de dados
      String[] nomes = new String[100];
      String[] cpf = new String[100];
      String[] data = new String[100];
      Gravador[] gravados = new Gravador[100];
+     
     public Gravador[] read(File arq, Arvore cp, Arvore nm, Arvore dt) 
     {       
         File file = arq;
@@ -24,9 +26,9 @@ public class Leitura
            
             while(sc.hasNextLine())
             {   
-                
+                // Scanner que vai ler as linhas do 
                 String leitura = sc.nextLine();
-                // quebra os dados trazidos do arquivo dentro do array
+                // quebra os dados trazidos do arquivo dentro do array, separando por ';'
                 String[] a = leitura.split(";");
                 // Armazena os 3 dados desejados para trabalhar nome, cpf, data
                 Informacoes re = new Informacoes(a[0], a[2], a[3]);
@@ -40,6 +42,7 @@ public class Leitura
                 
                 String u = data[i];
                 String f = "";
+                 // Aqui refatoramos a entrada de datas, a fim de formata-la como ANO/MES/DIA a fim de poder fazer comparações como String
                 for(int x = 0; x<1; x++)
                 {
                     f += u.charAt(6);
@@ -57,7 +60,7 @@ public class Leitura
                 String nome = r[i].nome;
                 String cpf = r[i].cpf;
                 
-                
+                // Inserção nas instancias de arvore
                 nm.inserir(nome, i);
                 cp.inserir(cpf, i);
                 dt.inserir(f, i);
@@ -72,7 +75,8 @@ public class Leitura
 
         return gravados;
     }
-
+     
+     // Metodo que retorna os dados das respectiva pesquisas
     public String retornaDados(int index) 
     {
         return ">"+gravados[index].nome + "; Cpf: "+ gravados[index].cpf + "; Rg: " + gravados[index].rg + "; Data de nascimento: "+ gravados[index].data+ "; Cidade natal: "+ gravados[index].cidade;
