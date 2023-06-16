@@ -15,3 +15,38 @@
 219378546;67452;Julia Fernandes;16/06/1989;Goiania
 123455678;32341;Laura Mathias;02/01/1909;Canoas
 931943814;42345;Laura Matos;18/09/2001;Belém
+123987456;56432;Camila Mendonça;14/02/1991;São Paulo
+678543219;23984;Leonardo Gomes;03/06/1984;Rio de Janeiro
+876345912;45931;Isabela Costa;22/11/1977;Belo Horizonte
+564392817;91726;Gustavo Silva;08/05/1993;Porto Alegre
+128973645;27654;Beatriz Santos;19/09/1988;Brasília
+539281764;61823;Rafaela Ferreira;06/03/1996;Salvador
+784521936;15234;Pedro Almeida;28/07/1981;Curitiba
+293847651;31247;Gabriel Vieira;17/04/1992;Fortaleza
+485739216;62391;Carolina Pereira;01/10/1980;Recife
+218736549;91538;Vinicius Lima;12/02/1999;Manaus
+927365148;51293;Fernanda Souza;24/05/1986;Vitória
+673921854;73921;Ricardo Pereira;13/12/1994;Belém
+293871456;18375;Luiza Rodrigues;07/09/1978;Florianópolis
+398764215;29184;Giovanni Carvalho;23/03/1997;Natal
+519827634;81623;Mariana Fernandes;06/08/1990;Goiânia
+129837564;31756;Larissa Oliveira;25/01/1983;São Paulo
+783645921;51962;Ricardo Almeida;14/06/1986;Rio de Janeiro
+672195843;92634;Amanda Costa;03/09/1979;Belo Horizonte
+412369587;49378;Juliana Santos;28/11/1991;Porto Alegre
+987216345;21643;Vitoria Ferreira;09/05/1987;Brasília
+536891427;87246;Rafael Gomes;22/03/1994;Salvador
+194856327;74963;Patricia Alves;07/07/1982;Curitiba
+827314956;63915;Leonardo Vieira;16/10/1995;Fortaleza
+593421876;31974;Alice Pereira;02/02/1984;Recife
+312497865;92675;Marcelo Lima;19/09/1998;Manaus
+823765914;56723;Leticia Souza;08/03/1992;São Paulo
+349871625;32986;Fernando Santos;21/06/1985;Rio de Janeiro
+518297436;84627;Gabriela Almeida;17/09/1978;Belo Horizonte
+936245718;53192;Ricardo Ferreira;02/12/1990;Porto Alegre
+275634819;72634;Camila Lima;15/04/1987;Brasília
+621397845;41829;Vitor Gomes;29/08/1995;Salvador
+153729468;62341;Mariana Alves;10/02/1982;Curitiba
+497865231;83519;Felipe Vieira;23/06/1993;Fortaleza
+628714395;21874;Laura Pereira;06/10/1980;Recife
+394286157;97265;Matheus Lima;19/01/1999;Manaus
