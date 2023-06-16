@@ -1,4 +1,5 @@
 package arquivo;
+// Classe que armazena os dados que serão inseridos nas arvores
 public class Informacoes {
     String nome;
     String cpf;
