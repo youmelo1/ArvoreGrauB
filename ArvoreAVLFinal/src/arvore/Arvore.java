@@ -333,11 +333,13 @@ public class Arvore {
 
     	}
     	
-    	if (no.getInfo().compareTo(dataF)>=0) {
+    	if (no.getInfo().compareTo(dataI)>0) {
     		procurarDatas(dataInicio, dataFim, no.getEsquerdo(), indices);
     	}
     	
-    	procurarDatas(dataInicio, dataFim, no.getDireito(), indices);
+    	 if (no.getInfo().compareTo(dataF) < 0) {
+    	        procurarDatas(dataInicio, dataFim, no.getDireito(), indices);
+    	 }
     }
     
     //inverte as datas para ser possivel comparar-las com o compare
