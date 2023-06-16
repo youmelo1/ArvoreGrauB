@@ -343,6 +343,7 @@ public class Arvore {
     }
     
     //inverte as datas para ser possivel comparar-las com o compare
+    // Inverte deixando na ordem ano/mes/dia
     public String inverteDatas(String data) {
     	String f = "";
         for(int x = 0; x<1; x++)
