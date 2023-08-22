@@ -9,16 +9,16 @@ import java.io.File;
 public class Leitura 
 {   
      // Arrays que armazenarão dados provenientes do arquivo de dados
-     String[] nomes = new String[100];
-     String[] cpf = new String[100];
-     String[] data = new String[100];
-     Gravador[] gravados = new Gravador[100];
+     String[] nomes = new String[1000];
+     String[] cpf = new String[1000];
+     String[] data = new String[1000];
+     Gravador[] gravados = new Gravador[1000];
      
     public Gravador[] read(File arq, Arvore cp, Arvore nm, Arvore dt) 
     {       
         File file = arq;
         
-        Informacoes[] r = new Informacoes[100];
+        Informacoes[] r = new Informacoes[1000];
   
         int i = 0;
         try{
